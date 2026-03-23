@@ -12,32 +12,17 @@ Default: reverse = 0: orthogonalization order = velocity → acceleration → ch
 reverse = 1: orthogonalization order = choice → acceleration → velocity.
 reverse = 2: move acceleration to the end, i.e. velocity → choice → acceleration.
 
-2. Original TDR cue-heading targeted dimensionality reduction
-
-To obtain original TDR cue-heading targeted dimensionality reduction results, run:
-
-originalTDR_analysis_CueHeading
-
-This script runs the cue-heading TDR analysis across the following datasets:
-
-VIP 1 s
-VIP 2 s
-MSTd 1 s
-MSTd 2 s
-PIVC 1 s
-
-PIVC is only available in the 1 s condition, so the script automatically skips the non-existing PIVC 2 s dataset.
-
+**2. Original TDR cue-heading targeted dimensionality reduction**
+To obtain original TDR cue-heading targeted dimensionality reduction results, run: originalTDR_analysis_CueHeading
 Regressor order for original cue-heading TDR
-
 In originalTDR_analysis_CueHeading, the variable reverse controls the regressor order for cue and heading:
-
 reverse = 0;
 Default: reverse = 0
 regressor order = cue → heading
 reverse = 1
 regressor order = heading → cue
-3. Original TDR heading-choice targeted dimensionality reduction
+
+**3. Original TDR heading-choice targeted dimensionality reduction**
 
 To obtain original TDR heading-choice targeted dimensionality reduction results, run:
 
