@@ -1,39 +1,22 @@
 **README: Dimensionality-reduction analyses for VIP, MSTd, and PIVC datasets**
 This folder contains MATLAB scripts for running time-varying targeted dimensionality reduction (**tTDR**), **original TDR**, time-course variance significance, comparison analyses across monkeys, hemispheres as well as complementary dimensionality-reduction analyses(mTDR and dPCA).
-
+_____________________________________________________________________________ 
 **1. Time-varying targeted dimensionality reduction (tTDR)**
-1.1 VIP and MSTd, 1 s condition
+Notes:
+(1) To obtain tTDR results for VIP and MSTd in the 1 s condition, run: tTDTR_VIP_MSTd_1s
+(2) To obtain tTDR results for VIP and MSTd in the 2 s condition, together with PIVC in the 1 s condition, run: tTDR_VIP_MSTd_2s_PIVC_1s
 
-To obtain tTDR results for VIP and MSTd in the 1 s condition, run:
-
-tTDTR_VIP_MSTd_1s
-1.2 VIP, MSTd, and PIVC for 2 s / 1 s
-
-To obtain tTDR results for VIP and MSTd in the 2 s condition, together with PIVC in the 1 s condition, run:
-
-tTDR_VIP_MSTd_2s_PIVC_1s
-1.3 Changing the orthogonalization order
-
-To change the orthogonalization order in the tTDR scripts, set:
-
-reverse = 0;
-
-or change it to:
-
-reverse = 1;
-
-or:
-
-reverse = 2;
+To change the orthogonalization order, set reverse = 1 or 2
+Default reverse = 0 corresponds to velocity → acceleration → choice;
+reverse = 1: orthogonalization order becomes choice → acceleration → velocity;
+reverse = 2: move acceleration to the end, i.e., velocity → choice → acceleration.
+To change the orthogonalization order in the tTDR scripts, set: reverse = 0; or change it to: reverse = 1; or: reverse = 2;
 
 The meaning of each option is:
+Default: reverse = 0: orthogonalization order = velocity → acceleration → choice
+reverse = 1: orthogonalization order = choice → acceleration → velocity
+reverse = 2: move acceleration to the end, i.e. velocity → choice → acceleration
 
-Default: reverse = 0
-orthogonalization order = velocity → acceleration → choice
-reverse = 1
-orthogonalization order = choice → acceleration → velocity
-reverse = 2
-move acceleration to the end, i.e. velocity → choice → acceleration
 2. Original TDR cue-heading targeted dimensionality reduction
 
 To obtain original TDR cue-heading targeted dimensionality reduction results, run:
