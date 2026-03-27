@@ -41,7 +41,7 @@ reverse = 0, regressor order = heading → choice
 reverse = 1, regressor order = choice → heading
 
 _____________________________________________________________________________________________________________________________________________________
-**4. Time-course variance, significanceg**
+**4. Time-course variance, significance**
 
 (1) tTDR (i.e. along the velocity, acceleration, and choice axes), run: **tTDTR_timecourse_variance_sig**.
 
