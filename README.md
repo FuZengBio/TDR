@@ -41,9 +41,9 @@ reverse = 0, regressor order = heading → choice
 reverse = 1, regressor order = choice → heading
 
 _____________________________________________________________________________________________________________________________________________________
-**4. Time-course variance, significance, and decoding**
+**4. Time-course variance, significanceg**
 
-(1) tTDR (i.e. along the velocity, acceleration, and choice axes), run: **tTDTR_timecourse_decoding**.
+(1) tTDR (i.e. along the velocity, acceleration, and choice axes), run: **tTDTR_timecourse_variance_sig**.
 
 To change the orthogonalization order, modify **idMode** in the script.
 
@@ -53,7 +53,7 @@ VCA: velocity → choice → acceleration
 
 CAV: choice → acceleration → velocity
 
-(2) Original TDR (i.e. along the heading and choice axes), run: **originalTDTR_HC_timecourse_decoding**
+(2) Original TDR (i.e. along the heading and choice axes), run: **originalTDTR_HC_timecourse_variance_sig**
 
 To change the regressor order, modify both reverse and orderStr in the script.
 
